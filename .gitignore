@@ -1,0 +1,43 @@
+# Dependencies, generated files, and test output
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+.npm-cache/
+*.log
+*.tsbuildinfo
+public/models/*.task
+
+# Local environment and credentials
+.env
+.env.*
+*.env
+.envrc
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+secrets/
+credentials/
+.aws/
+
+# Local tooling, temporary files, and personal material
+.agents/
+.codex/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+private/
+personal/

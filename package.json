@@ -1,0 +1,22 @@
+{
+  "name": "facecontrol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host localhost --port 5173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host localhost",
+    "test": "node --test",
+    "model:download": "node scripts/download-model.js"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.21",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.2"
+  }
+}

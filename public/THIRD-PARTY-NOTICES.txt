@@ -1,0 +1,27 @@
+FaceControl third-party notices
+
+React, React DOM, and Scheduler
+MIT License. Copyright (c) Meta Platforms, Inc. and affiliates.
+The installed packages share the license text in licenses/react-mit.txt.
+https://github.com/facebook/react
+
+Lucide React
+ISC License. Some icons are derived from Feather, which uses the MIT License.
+See licenses/lucide-isc.txt and licenses/feather-mit.txt.
+https://lucide.dev/license
+
+Google MediaPipe Tasks Vision and Face Landmarker
+The MediaPipe Web SDK and its WebAssembly assets are distributed under the
+Apache License 2.0. See licenses/apache-2.0.txt and the upstream project.
+https://github.com/google-ai-edge/mediapipe
+
+The deployment workflow downloads Google's unmodified Face Landmarker model
+bundle (float16, version 1). The MediaPipe Samples project identifies the
+underlying models as Apache 2.0 licensed. The model is fetched at build time.
+https://github.com/google-ai-edge/mediapipe-samples/issues/407
+https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+
+Vite and its build dependencies are installed by npm for development and builds.
+Their versions and license identifiers are listed in package-lock.json.
+
+These notices apply to the listed third-party components.

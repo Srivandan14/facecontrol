@@ -1,0 +1,50 @@
+.skip-link { position: fixed; left: 14px; top: 12px; z-index: 10; transform: translateY(-150%); padding: 10px 15px; border-radius: 8px; background: #c8a6ff; color: #170e25; font-weight: 750; }
+.skip-link:focus { transform: none; }
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.product-panel { padding: clamp(16px, 3vw, 27px); }
+.product-panel h2, .product-dialog h2 { font-size: clamp(22px, 3vw, 31px); letter-spacing: -.045em; }
+.product-panel p, .product-dialog p, .onboarding-steps p, .privacy-details li { margin-top: 8px; max-width: 72ch; color: #c6bfd7; line-height: 1.6; }
+.daily-panel { background: radial-gradient(ellipse at 92% 0%, #3b2468, transparent 62%), #171125; }
+.section-kicker { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; color: #d0b4ff; font: 650 11px var(--mono); letter-spacing: .12em; }
+.daily-info, .product-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 15px; }
+.daily-info { color: #c3f6f8; font: 12px var(--mono); }
+.daily-info span { padding: 6px 8px; border: 1px solid #586385; border-radius: 6px; }
+.product-actions .button { cursor: pointer; }
+.stat-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-block: 13px; }
+.stat-strip div { padding: 8px; border: 1px solid #44315f; border-radius: 8px; background: #201630; }
+.stat-strip dt, .product-note { color: var(--muted); font-size: 12px; }
+.stat-strip dd { margin: 4px 0 0; color: var(--cyan); font-weight: 700; }
+.record-list, .achievement-list { list-style: none; padding: 0; margin: 12px 0 0; }
+.record-list li { display: flex; justify-content: space-between; gap: 8px; padding: 7px 0; border-top: 1px solid var(--border); }
+.achievement-panel { grid-column: 1 / -1; }
+.achievement-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.achievement-list li { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px; padding: 11px; border: 1px solid var(--border); border-radius: 9px; }
+.achievement-list li[data-earned='true'] { border-color: #4b8b89; background: #172729; }
+.achievement-list small { display: block; margin-top: 3px; color: #c6bfd7; }
+.achievement-status { color: #c5bdde; font-size: 12px; }
+.achievement-list li[data-earned='true'] .achievement-status { color: #a0f5e9; }
+.privacy-details { margin-top: 16px; }
+.privacy-details h2 { display: flex; align-items: center; gap: 9px; }
+.privacy-details ul { padding-left: 22px; }
+.product-dialog { width: min(560px, calc(100% - 26px)); max-height: calc(100dvh - 26px); padding: clamp(16px, 4vw, 30px); border: 1px solid #674d8b; border-radius: 15px; background: #171126; color: #f7f3ff; }
+.product-dialog::backdrop { background: #080711bd; }
+.onboarding-steps { display: grid; gap: 8px; margin-top: 14px; }
+.onboarding-steps div { display: grid; grid-template-columns: auto 1fr; gap: 10px; padding: 10px; border: 1px solid #392b51; border-radius: 9px; background: #211735; }
+.onboarding-steps svg { color: var(--cyan); margin-top: 3px; }
+.onboarding-steps p { margin: 0; font-size: 14px; }
+.onboarding-steps strong { display: block; }
+.score-table { overflow-x: auto; }
+.score-download { padding: 6px 8px; border: 1px solid #52406a; border-radius: 6px; background: #241835; cursor: pointer; }
+.empty-state .text-link { margin-top: 12px; }
+.arcade-challenge { color: #bdeff1; margin: 0 0 10px; font-size: 13px; }
+.arcade-main:fullscreen { display: flex; flex-direction: column; gap: 8px; overflow: auto; border-radius: 0; padding: clamp(8px, 2vw, 22px); }
+.arcade-main:fullscreen .arcade-stage { width: min(100%, var(--fullscreen-width, 1100px)); height: min(69dvh, 900px); min-height: 120px; margin: 0 auto; flex: 1 0 120px; aspect-ratio: auto; }
+.arcade-main:fullscreen canvas { object-fit: contain; }
+.arcade-main:fullscreen .arcade-options { margin-top: 3px; }
+.arcade-space { --fullscreen-width: 1000px; }
+.arcade-racer { --fullscreen-width: 760px; }
+.arcade-main:fullscreen .arcade-actions { margin-top: 2px; justify-content: center; }
+@media (max-width: 660px) {
+  .product-grid, .achievement-list { grid-template-columns: 1fr; }
+  .score-panel td, .score-panel th { padding: 7px; font-size: 12px; }
+}
